@@ -2,19 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/estilo.css">
     <title>Bitácora</title>
 </head>
 <body>
+    <nav>
+        <a href="#temaprev"><ul>Temas previos</ul></a>
+        <a href="#DOM"><ul>DOM</ul></a>
+        <a href="#viewport"><ul>Viewport</ul></a>
+        <a href="#conferencia"><ul>Conferencia</ul></a>
+        <a href="#estaticas"><ul>Unidades de medida estaticas</ul></a>
+        <a href="#relativas"><ul>Unidades de medida relativas</ul></a>
+        <a href="#pym"><ul>Property y Media</ul></a>
+        <a href="#mascara"><ul>Mascaras</ul></a>
+    </nav>
     <div class="contenedor">
         <h1>Bitácora</h1>
         <h5>José Antonio Gomez Hurtado</h5>
         <h5>Grupo: A</h5>
-        <h5>23/08/2025<h5>
+        <h5>02/09/2025<h5>
         <h5>Diseño Web HTML5 y CSS3 Adaptativo</h5>  
         <div class="tema">
-            <h2>Grafico de temas previos</h2>
+            <h2  id="temaprev">Grafico de temas previos</h2>
             <div class="descripcion">
                 <p>
                     Se vió un repaso de los temas vistos en la materia Introducción al HTML5 y CSS3 y se relacionaron los temas con algo que nos guste
@@ -22,13 +32,15 @@
                 <p>
                     La presentación completa está <a href="https://www.canva.com/design/DAGvUVGPDGk/D9CxbsFzcY1hhQbKuggC4A/view?utm_content=DAGvUVGPDGk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4d764b3f6e" style="text-decoration: none;">en este enlace</a>
                 </p>
-                <a href="img/1.png" target="_blank"><img src="img/1.png" alt="IntegrantesEq" width="500px"></a>
-                <a href="img/2.png" target="_blank"><img src="img/2.png" alt="Imagen1" width="500px"></a>
-                <a href="img/3.png" target="_blank"><img src="img/3.png" alt="Imagen2" width="500px"></a>
+                <div class="imgcont">
+                    <a href="img/1.png" target="_blank"><img src="img/1.png" alt="IntegrantesEq"></a>
+                    <a href="img/2.png" target="_blank"><img src="img/2.png" alt="Imagen1"></a>
+                    <a href="img/3.png" target="_blank"><img src="img/3.png" alt="Imagen2"></a>
+                </div>
             </div>
             <div class="imgcont">
             </div>
-            <h2>DOM en CSS, JavaScript, Eventos y Animación</h2>
+            <h2 id="DOM">DOM en CSS, JavaScript, Eventos y Animación</h2>
             <div class="descripcion">
                 <p>
                     Se dió una explicación de lo que es el DOM y cómo afecta en el CSS, JavaScript, los Eventos y la Animación
@@ -45,6 +57,146 @@
                 </p>
                 <p>
                     El <b>DOM en las Animaciones</b> permite que haya animaciones en los elementos por una serie de instrucciones que sigue el DOM
+                </p>
+            </div>
+            <h2 id="viewport">¿Qué es el viewport?</h2>
+            <div class="descripcion">
+                <p>
+                    El <b>viewport</b> es una etiqueta que detecta si la página web se va a visualizar en un dispositivo movil y 
+                    ajusta las dimensiones de la página y sus elementos al tamaño de la pantalla del dispositivo.
+                </p>
+            </div>
+            <h2 id="conferencia">Plática de IA (Conferencia)</h2>
+            <div class="descripcion">
+                <p>
+                    En la plática sobre la IA se habló de la importancia de ser específicos al momento de utilizar una IA,
+                    ya que unas instrucciones generales podrían dar un resultado diferente al que estabas pensando y que querías.
+                </p>
+                <p>
+                    También se mencionó la importancia de ser transparentes al momento de usar la IA para trabajos escolares, 
+                    tanto para maestros como para estudiantes, lo cual lleva a un dilema moral sobre el uso de la misma que puede ser resuelto
+                    siendo completamente honestos, mencionando que IA se utilizó, que instrucciones se le dió y los resultados obtenidos.
+                </p>
+                <p>
+                    La presentación podría haber estado mejor si se hubieran enfocado en los peligros sobre el uso continuo de la IA,
+                    ya que muchos de los estudiantes prefieren que una IA les haga todo el trabajo sin aprender realmente sobre los temas
+                    que se presentan en clase, si bien es cierto que pueden ayudarte a aligerar el trabajo,
+                    quienes no la utilizan como un método de aprendizaje más (como si fuese un profesor que aclara dudas y te explica),
+                    simplemente no revisan si aquello que se les está entregando tiene resultados realmente funcionales y/o verídicos.
+                </p>
+            </div>
+            <h2 id="estaticas">Unidades de medida estáticas y relativas</h2>
+            <div class="descripcion">
+                <h3>Unidades de medida estáticas</h3>
+                <p>No son relativas a nada y siempre tienen el mismo tamaño</p>
+                <table>
+                    <tr>
+                        <th>Unidad</th>
+                        <th>Nombre</th>
+                        <th>Equivalencia</th>
+                    </tr>
+                    <tr>
+                        <td>cm</td>
+                        <td>Centímetros</td>
+                        <td>1cm=96px/2,54</td>
+                    </tr>
+                    <tr>
+                        <td>mm</td>
+                        <td>Milímetros</td>
+                        <td>1mm = 1/10 de 1cm</td>
+                    </tr>
+                    <tr>
+                        <td>Q</td>
+                        <td>Cuartos de milímetro</td>
+                        <td>1Q = 1/40 de 1cm</td>
+                    </tr>
+                    <tr>
+                        <td>in</td>
+                        <td>Pulgadas</td>
+                        <td>1in = 2,54cm = 96px</td>
+                    </tr>
+                    <tr>
+                        <td>pc</td>
+                        <td>Picas</td>
+                        <td>1pc = 1/6 de 1in</td>
+                    </tr>
+                    <tr>
+                        <td>pt</td>
+                        <td>Puntos</td>
+                        <td>1pt = 1/72 de 1in</td>
+                    </tr>
+                    <tr>
+                        <td>px</td>
+                        <td>Píxeles</td>
+                        <td>1px = 1/96 de 1in</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="descripcion">
+                <h3 id="relativas">Unidades de medida relativas</h3>
+                <p>Son relativas a algo más, puede ser el tamaño de letra de un elemento principal o el tamaño de la ventana gráfican </p>
+                <table>
+                    <tr>
+                        <th>Unidad</th>
+                        <th>Relativa a</th>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>
+                            Tamaño de letra del elemento padre, en el caso de propiedades tipográficas como font-size, y tamaño de la fuente del 
+                            propio elemento en el caso de otras propiedades, como width.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ex</td>
+                        <td>Altura x de la fuente del elemento</td>
+                    </tr>
+                    <tr>
+                        <td>ch</td>
+                        <td>La medida de avance (ancho) del glifo "0" de la letra del elemento.</td>
+                    </tr>
+                    <tr>
+                        <td>rem</td>
+                        <td>Tamaño de la letra del elemento raíz.</td>
+                    </tr>
+                    <tr>
+                        <td>lh</td>
+                        <td>Altura de la línea del elemento.</td>
+                    </tr>
+                    <tr>
+                        <td>vw</td>
+                        <td>1% del ancho de la ventana gráfica.</td>
+                    </tr>
+                    <tr>
+                        <td>vh</td>
+                        <td>1% de la altura de la ventana gráfica.</td>
+                    </tr>
+                    <tr>
+                        <td>vmin</td>
+                        <td>1% de la dimensión más pequeña de la ventana gráfica.</td>
+                    </tr>
+                    <tr>
+                        <td>vmax</td>
+                        <td>1% de la dimensión más grande de la ventana gráfica.</td>
+                    </tr>
+                </table>
+            </div>
+            <h2 id="pym">Property y Media</h2>
+            <div class="descripcion">
+                <p>
+                    La regla @property permite utilizar colores y tamaños de fuentes definidas por ti mismo poniendoles nombre, su sintaxis es 
+                    @property --nombre {syntax:"color"; inherits: true o false; initial-value: valor;}
+                    se utilizan en el CSS con el atributo var()
+                </p>
+                <p>
+                    La regla @media permite cambiar el estilo de los elementos del sitio web dependiendo del tamaño que se tenga en el viewport,
+                    su sintaxis es @media (max-width:600px) {estilo que se cambia al exceder el valor establecido}
+                </p>
+            </div>
+            <h2 id="mascara">Mascaras</h2>
+            <div class="descripcion">
+                <p>
+                    En CSS se utiliza el atributo mask-image, la imagen que se coloque en el URL será el recorte que se hará en la imagen original
                 </p>
             </div>
         </div>
