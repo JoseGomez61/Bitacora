@@ -1,25 +1,38 @@
-nav {
-    margin: 0 auto;
-    background-color: orangered;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-nav a {
-    margin: auto;
-    padding: 1% 1%;
+header {
+    background-color: darkorange;
     text-align: center;
+    padding: 1em;
+}
+header h1{
     color: white;
+    margin: 0;
+    font-size: 2.5em;
+}
+nav {
+    background-color: orangered;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: .5%;
+    text-align: center;
+}
+nav ul a{
+    color:white;
     text-decoration: none;
 }
-nav a ul{
-    padding: 0%;
-}
-nav a:hover {
+nav ul li:hover{
     background-color: rgb(146, 39, 0);
+} 
+nav ul li{
+    padding: 15px;
+    display: inline;
+    margin: 10px;
 }
 .contenedor{
     width: 100%;
@@ -41,8 +54,8 @@ nav a:hover {
     margin: 0%;
 }
 .contenedor h5{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 70%;
     margin: 0%;
     background-color:rgb(175, 102, 12);
     display: block;
@@ -79,6 +92,7 @@ nav a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
     font-size: 50px;
     text-align: center;
     color: white;
@@ -106,11 +120,21 @@ nav a:hover {
 .descripcion table{
     border-collapse: collapse;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     width: 100%;
 }
 .descripcion table tr td{
     border-collapse: collapse;
     border-style: solid;
-    border-color: black;
+    border-color: white;
+}
+footer{
+    background-color: rgb(214, 118, 1);
+    text-align: center;
+    padding: 1em;
+}
+footer h5{
+    margin: 0.3em 0;
+    color: white;
+    font-size: 1.2em;
 }
