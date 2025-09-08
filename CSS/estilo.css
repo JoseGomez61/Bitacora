@@ -1,3 +1,6 @@
+html{
+    background-color: orangered;
+}
 header {
     background-color: darkorange;
     text-align: center;
@@ -6,12 +9,12 @@ header {
 header h1{
     color: white;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 5em;
 }
 nav {
     background-color: orangered;
     color: white;
-    padding: 20px;
+    padding: 1.5em;
     position: sticky;
     overflow: hidden;
     top: 0;
@@ -30,9 +33,9 @@ nav ul li:hover{
     background-color: rgb(146, 39, 0);
 } 
 nav ul li{
-    padding: 15px;
+    padding: 1em;
     display: inline;
-    margin: 10px;
+    margin: .5vw;
 }
 .contenedor{
     width: 100%;
@@ -41,7 +44,6 @@ nav ul li{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 50px;
     text-align: center;
 }
 .contenedor h1{
@@ -53,17 +55,6 @@ nav ul li{
     color: white;
     margin: 0%;
 }
-.contenedor h5{
-    width: 90%;
-    height: 70%;
-    margin: 0%;
-    background-color:rgb(175, 102, 12);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 50px;
-    color: white;
-}
 .tema{
     width: 90%;
     height: 90%;
@@ -71,7 +62,7 @@ nav ul li{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 50px;
+    font-size: 3.5rem;
     text-align: center;
 }
 .descripcion{
@@ -93,7 +84,7 @@ nav ul li{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    font-size: 50px;
+    font-size: 2.5rem;
     text-align: center;
     color: white;
 }
@@ -113,8 +104,6 @@ nav ul li{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 50px;
-    font-size: 12px;
     text-align: center;
 }
 .descripcion table{
@@ -129,7 +118,7 @@ nav ul li{
     border-color: white;
 }
 footer{
-    background-color: rgb(214, 118, 1);
+    background-color: rgb(214, 118, 0);
     text-align: center;
     padding: 1em;
 }
