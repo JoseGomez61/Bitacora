@@ -1,0 +1,138 @@
+html body{
+    margin: 0;
+}
+.parallax{
+    background-image: url(../img/Fondo_ruinas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+}
+.bg{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 0;
+}
+.parabottom{
+    background-color: black;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    margin:0;
+    z-index: 1;
+}
+.camino{
+    background-color: #84357D;
+    width: 100vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    z-index: 2;
+}
+.carril{
+    background-color: #B962B9;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    margin: 3% 3% 3% 0%;
+    z-index: 2;
+}
+.fondo{
+    text-align: center;
+    z-index: 0;
+}
+.fondo img{
+    transition: width 0.5s ease-in-out;
+    width: 90%;
+}
+.esquinas{
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+.esqizq{
+    position: absolute;
+    left: 0;
+    bottom: 12%;
+    margin: 0;
+    text-align: left;
+    z-index: 2;
+}
+.esqizq img{
+    height: 250px;
+}
+.esqder{
+    position: absolute;
+    right: 0;
+    bottom: 12%;
+    margin: 0;
+    text-align: left;
+    z-index: 2;
+}
+.esqder img{
+    height: 250px;
+}
+.personaje{
+    position: absolute;
+    right: 50%;
+    bottom: 5%;
+    margin: 0;
+    text-align: center;
+    z-index: 4;
+}
+.personaje img{
+    width: 30%;
+}
+.titulo{
+    text-align: center;
+    z-index:2;
+}
+.titulo img{
+    bottom: 50%;
+    left: 50%;
+    width: 90%;
+}
+/*Tablet*/
+@media (min-width: 720px){
+    .parabottom{
+        height: 20vh;
+    }
+    .fondo img{
+        width: 50%;
+    }
+    .titulo img{
+        width: 50%;
+    }
+    .esqizq img{
+        height: 350px;
+    }
+    .esqder img{
+        height: 350px;
+    }
+}
+/*Escritorio*/
+@media (min-width: 1024px){
+    .parabottom{
+        height: 25vh;
+    }
+    .fondo img{
+        width: 30%;
+    }
+    .titulo img{
+        width: 40%;
+    }
+    .esqizq img{
+        height: 500px;
+    }
+    .esqder img{
+        height: 500px;
+    }
+}
