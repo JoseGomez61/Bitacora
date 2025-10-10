@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <title>JS</title>
+    <style>
+        button{
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="">Hola Normalize.css</h1>
+    <p>Texto se verá igual en navegadores modernos.</p>
+    <button>Botón estandar</button>
+   
+</body>
+<script>
+    //Este es un comentario
+    console.log("El Script se esta ejecutando");
+    document.write("<h2>Contenido agregado en JS</h2>")
+    //Variable es un espacio en memoria que se le puede asignar algo
+ 
+    let nombre; //Let solo se puede usar en un bloque de codigo
+    nombre = "Juan Jose David" 
+ 
+    var edad = 32; //Estas variables cambian el Var se puede usar donde sea
+    const CURP = "Ejemplo CURP"
+ 
+    var entero = 10;
+    var decimal = 3.1416;
+    var suma = entero + decimal //Si se quiere utilizar, se iene que guardar en una variable
+ 
+    //Estructuras de control
+    var calificaciónDeDamaris = 10;
+ 
+    if (calificaciónDeDamaris >= 10){
+        console.log("Aprobada")
+    }
+    else{
+        console.log("Reprobada")
+    }
+
+    //Switch
+    var dialogo;
+    dialogo=1;
+    switch (dialogo){
+        default:
+            console.log("Stanley no puede hacer eso, solo elige 1, 2 o 3")
+        case 1:
+            console.log("Stanley entró por la puerta de la izquierda");
+            break
+        case 2:
+            console.log("Stanley entró por la puerta de la derecha");
+            break
+        case 3:
+            console.log("Stanley decidió regresar por donde vino");
+            break
+    }
+
+    //For
+
+
+    //While
+
+    //Do-While
+
+</script>
+</html>
