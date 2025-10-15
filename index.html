@@ -31,6 +31,7 @@
             <a href="#prototipos"><li>Prototipos</li></a>
             <a href="#JavaScript"><li>JavaScript</li></a>
             <a href="#psicolor"><li>Psicologia color</li></a>
+            <a href="#funciones"><li>Funciones</li></a>
         </ul>
     </nav>
     <div class="contenedor">
@@ -338,6 +339,56 @@
                 <a href="https://rafaelcanof.github.io/Novelandia/?nombre=&correo=&mensaje=fdgf#inicio">Proyecto</a>
             </div>
         </div>
+        <div class="tema">
+            <h2 id="funciones">Funciones</h2>
+            <div class="descripcion">
+                <p>
+                    Una función es un bloque de código que realiza una tarea específica, se define con la palabra function
+                    y se ejecuta cuando es llamada.
+                    Para devolver un valor se usa return.
+                    Para llamar una función se usa su nombre y los paréntesis.
+                    Se puede mostrar el valor devuelto con console.log(). 
+                    getElementById permite obtener un elemento del HTML por medio del atributo id.
+                    addEventListener sirve para escuchar eventos, como clicks, teclas, etc. y ejecutar la función.
+                </p>
+                <p id="mensaje">Texto original</p>
+                <button id="boton">Haz click aquí</button>
+            </div>
+        </div>
+        <script>
+            //Funciones
+            function texto (){
+                console.log("Esto es una función");
+            }
+            texto();
+            
+            //Regresar valor
+            function sumar (a,b){
+                return a+b;
+            }
+            
+            //Llamar una función
+            var resultado = sumar(5,3);
+            console.log(resultado);
+            
+            //Imprimir en consola el resultado de una funcion
+            function multiplicar(x,y){
+                return x*y;
+            }
+            console.log(multiplicar(4,3));
+            
+            //getElementById
+            var parrafo = document.getElementById("mensaje");
+            parrafo.textContent = "Texto cambiado con JavaScript";
+            
+            //addEventListener
+            var boton = document.getElementById("boton");
+            
+            boton.addEventListener("click",function(){
+                console.log("Haz hecho click, eso es un evento");
+            });
+        </script>
+
     </div>
     <footer>
         <h5>José Antonio Gomez Hurtado</h5>
