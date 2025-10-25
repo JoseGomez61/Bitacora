@@ -339,10 +339,11 @@ footer h5{
     }
     nav ul li:hover{
         background-color: rgb(146, 39, 0);
+        border-radius: 10%;
     } 
     nav ul li{
         padding: 1em;
-        display: inline;
+        display: inline-block;
         margin: .5vw;
     }
     .contenedor{
