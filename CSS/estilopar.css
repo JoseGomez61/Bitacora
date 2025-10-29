@@ -127,7 +127,7 @@ overflow: hidden;
     #layer1 {
 position: absolute;
 z-index: 1;
-background-image:url(img/Fondo_ruinas.png);
+background-image:url(../img/Fondo_ruinas.png);
 top: 100;
 left: 0;
 width: 100%;
