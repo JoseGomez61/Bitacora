@@ -394,7 +394,31 @@
                 </p>
             </div>
         </div>
+        <div class="tema">
+            <h2 id="perfil">Perfil de usuario</h2>
+            <div class="descripcion">
+                <p>
+                    Los perfiles de usuario nos permiten tener una idea clara de a quién va dirigido nuestro producto,
+                    lo cual resulta beneficioso puesto que podemos responder a las necesidades de nuestros usuarios.
+                    <a href="https://www.canva.com/design/DAG3qo7uFS8/nkJ7SQKUXlEWV8yKd0VaFQ/view?utm_content=DAG3qo7uFS8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb5319134a">Perfiles de usuario</a>
+                </p>
+            </div>
+        </div>
+        <div id="cookiebanner">
+            <p>Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies. 
+                <a href="/politica-de-cookies">Más información</a>
+            </p>
+            <button id="acceptcookie">Aceptar</button>
+        </div>
+
         <script>
+
+            /*Cookies*/
+            document.getElementById('acceptcookie').addEventListener('click', function() {
+            document.getElementById('cookiebanner').style.display = 'none';
+            });
+            /*Fin cookies*/
+            
             //Funciones
             function texto (){
                 console.log("Esto es una función");

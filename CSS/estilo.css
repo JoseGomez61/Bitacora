@@ -64,6 +64,7 @@ header h1{
     margin: 0;
     font-size: 3em;
 }
+
 nav {
     background-color: orangered;
     color: white;
@@ -87,6 +88,7 @@ nav ul li{
     display: inline-block;
     margin: .5vw;
 }
+
 .contenedor{
     width: 100%;
     height: 100%;
@@ -174,6 +176,34 @@ footer h5{
     color: white;
     font-size: 1.2em;
 }
+
+#cookiebanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f07400;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+    z-index: 2; /* Para que esté por encima de otros elementos */
+}
+
+#cookiebanner a {
+    color: #9c27b0;
+    text-decoration: underline;
+}
+
+#cookiebanner button {
+    background-color: #9c27b0;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
 
 /*Tablet*/
 
